@@ -1,12 +1,21 @@
 import React from 'react';
-//import CssBaseline from '@material-ui/core/CssBaseline';
+import 'semantic-ui-css/semantic.min.css'
 import logo from './logo.svg';
 import './App.css';
+import LikeButton from './components/like_button'
+import Header from './components/header'
+
 
 function App() {
   return (
+    <div class="ui container">
+    <Header/>
+    <LikeButton/>
+    
     <div className="App">
+    
       <header className="App-header">
+      
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload LOL.
@@ -17,9 +26,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Fart app
         </a>
       </header>
+    </div>
     </div>
   );
 }
